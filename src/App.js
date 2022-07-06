@@ -18,7 +18,17 @@ const Home = () => (
     <AllEvents />
   </div>
 );
+const myAppConfig = {
+  // ...
+  "aws_appsync_graphqlEndpoint": "https://jji4nbll6zgrvej4klbjngwoqe.appsync-api.us-east-1.amazonaws.com/graphql",
+    "aws_appsync_region": "us-east-1",
+    "aws_appsync_authenticationType": "AWS_IAM",
+  // ...
+}
 
+Amplify.configure(myAppConfig);
+
+Amplify.configure(myAppConfig);
 const App = () => (
   <Router>
     <div>
